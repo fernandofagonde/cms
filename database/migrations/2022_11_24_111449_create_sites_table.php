@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pages', function (Blueprint $table) {
+        Schema::create('sites', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-            $table->string('url');
-            $table->string('conteudo');
-            $table->boolean('habilitado');
-            $table->foreignId('user_id')->constrained();
+            $table->string('title');
+            $table->string('description');
+            $table->string('author');            
+            $table->text('meta');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pages');
+        Schema::dropIfExists('sites');
     }
 };

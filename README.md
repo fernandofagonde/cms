@@ -50,15 +50,18 @@ php artisan serve
 A tela de login estará disponível no endereço:
 http://localhost:8000/admin
 
-Para criar um novo usuário utilize o endereço:
+Para criar um novo usuário utilize o endereço (quando for para produção tem que desativar essa rota, ou não):
 http://localhost:8000/admin/register
 
 Criando novos itens do crud:
-Crie o model e a migration da nova tabela:
 ```bash
+#Crie o model e a migration da nova tabela
 php artisan make:model Tabela -m
 #crie o crud
-php artisan backpack:crud tabela
+php artisan backpack:crud tabela    
 ```
+
+Os componentes que podem ser utilizados estão disponíveis em:
+https://backstrap.net/#
 
 

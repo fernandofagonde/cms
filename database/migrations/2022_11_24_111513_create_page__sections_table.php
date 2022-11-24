@@ -13,11 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('layouts', function (Blueprint $table) {
-            $table->id();
-            $table->string('titulo');
-            $table->string('conteudo');
-            $table->boolean('habilitado');
+        Schema::create('page__sections', function (Blueprint $table) {
+            $table->id();    
+            $table->integer('page_id');
+            $table->integer('section_id'); 
+            $table->foreign('page_id')->references('id')->on('pages');
+            $table->foreign('section_id')->references('id')->on('sections');
+            $table->boolean('enabled');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('layouts');
+        Schema::dropIfExists('page__sections');
     }
 };

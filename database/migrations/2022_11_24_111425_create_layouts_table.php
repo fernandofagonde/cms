@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('sections', function (Blueprint $table) {
+        Schema::create('layouts', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-            $table->string('conteudo');
-            $table->boolean('habilitado');
-
-            $table->foreignId('user_id')->constrained();
+            $table->string('description');
+            $table->boolean('enabled');
+            $table->text('html');
+            $table->text('css');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sections');
+        Schema::dropIfExists('layouts');
     }
 };
