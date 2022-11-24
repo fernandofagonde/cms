@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('layouts', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->string('conteudo');
+            $table->boolean('habilitado');
             $table->timestamps();
         });
     }

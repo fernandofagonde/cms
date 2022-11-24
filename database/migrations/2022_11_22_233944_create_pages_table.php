@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->string('url');
+            $table->string('conteudo');
+            $table->boolean('habilitado');
+            $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
     }
