@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('page__sites', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->integer('site_id');
-            $table->integer('page_id');
-            $table->foreign('site_id')->references('id')->on('sites');
-            $table->foreign('page_id')->references('id')->on('pages');
+            $table->string('title');
+            $table->string('description');
             $table->boolean('enabled');
             $table->softDeletes();
             $table->timestamps();
@@ -32,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('page__sites');
+        Schema::dropIfExists('categories');
     }
 };

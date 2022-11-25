@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreign('page_id')->references('id')->on('pages');
             $table->foreign('section_id')->references('id')->on('sections');
             $table->boolean('enabled');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

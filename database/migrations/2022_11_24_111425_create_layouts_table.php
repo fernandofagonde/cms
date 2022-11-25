@@ -19,6 +19,7 @@ return new class extends Migration
             $table->boolean('enabled');
             $table->text('html');
             $table->text('css');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

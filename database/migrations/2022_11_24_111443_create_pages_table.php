@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('url');
             $table->boolean('menu');   
             $table->boolean('enabled');         
+            $table->softDeletes();
             $table->timestamps();
         });
     }

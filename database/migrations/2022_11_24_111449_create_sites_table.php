@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('author');            
             $table->text('meta');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

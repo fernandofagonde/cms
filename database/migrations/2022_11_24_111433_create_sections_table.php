@@ -21,6 +21,7 @@ return new class extends Migration
             $table->boolean('enabled');
             $table->integer('layout_id');
             $table->foreign('layout_id')->references('id')->on('layouts');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
