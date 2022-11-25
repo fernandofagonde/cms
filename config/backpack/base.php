@@ -24,7 +24,7 @@ return [
     // ----
 
     // Project name. Shown in the window title.
-    'project_name' => 'Backpack Admin Panel',
+    'project_name' => 'CMS',
 
     // When clicking on the admin panel's top-left logo/name,
     // where should the user be redirected?
@@ -85,13 +85,20 @@ return [
     // ------
 
     // Menu logo. You can replace this with an <img> tag if you have a logo.
-    'project_logo'   => '<b>Back</b>pack',
+    'project_logo'   => '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="22" viewBox="0 0 79 22">
+    <defs>
+      <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 281 78">
+        <image width="281" height="78" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAABOCAYAAAAU7GLsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAC9pJREFUeNrsXUF22zgShfO8H/UJml7NMvIJQm1m2/IJIp3A1glknUD2CSyfIPJ2NlJOEPVyVmafYNgn6EElHxM0TVlEEQBBsf57fEpsiwSBj4+qQgFQSiAQCAQCgUAgEAgEAoFAEBsXUgUCgcAF//rrPzP9cauvsfXjg75e9PXw74t/lt5FRj/0nj71ze+lCTpt/Fx/7By/ttftNqm511+uz9f3uai5D5Und7zVRN9rLy2aHL8y/fEF4kJCQm30u74+oo1H+Dm138F874OHBz/pj6U0gUBw1gIzsgRmo68rLSQ3ZFjQJ/1fXysIzQ6C9B2XHh6aSxMIBGePOwjMVl+P1Pe1Bti//0quEv5NRsdaXzdsSwYCwzGDBQJBP3GLzwWslVz9jMmMISx3CJmQyzSFTriLjP4i3fBV/T3oIxAIztdVGkNYKH5XWL86IJ73iP9/xOfWEh83dwmBxS94oEAgGAaO9fcxAvvG4HjG5x/2HzW2ZDBttROBEQgEFQEyVo6xYH51FhlMUT9JfbLNzQwmp0DQOyCdgOIsuYmzWO7Stf4s8LscPzefRSN3CVPUs5Q6rP7IYKLVWVUFrkM1KSiS70oV/Anlyyq/rysnReUPGAlKoXSQdhlZfKkT+73VmZIfsMCrrMovCAFxqbTzVDxhCx1Ywi3a41kECgZTYPg39IFMWfGbyxMN0/kUNcoxpRdQPxN+mn63QGW8WKZciDKays8cvmZIklv3oTI+hyzrgERlCrHPG7TL0hoEDrheUmgHiIr9LqOG31OWEDx7EJ0FykFT2X/aCZyop61+Jv1ubf39d1y800g75TaDtPKZ8QvT67NHK6qEGq8qEfI2ZZyiUjPP3KLyUcR+42LdDD3jFx1yic4w8sSZDbWFL844cusz3qUzTtVY6iYuW6A//amvf6CcGepsoZ+xOSUyM0bH2fswN9FRloEtqA0qomxRzhhu5JsGa9DJXMtU1N2/TyKD91577JBBOOPA/7UKlyJSQjTvmeUbwZq5rQj50UE8mQWSKPwSLxADJSrkgVHOnYqbJ0SNN48Zs+mLyGBSYpkyZxx49RRYKKuWzbyNYWDFh96NAV0kIjBjxH+yDh7v1IF1Wb9EJEKVFDcBAnq9FJnKYr2kOdPQeukq/2wVemHzhwQEZgbLIOuoCCQYuyZTzBg1px2VM2taznMH6uCb6i7rnDjwzUdbJJB/tqSBoDI1fT4igwp+Ut0n+I1PdWArqNglzIzfkAVmBoHpmjOtRR9xvRTyz3K8S5A6vXxnpHB9YOESgbcEJhWYJeqTIy5JCttZkHl+c8KvdyV9GcsF8zgo9YUzpwRmltC7jK13KYOLjPoR3Xb1o2kvifuGFTxVaWYQG9Jc24LJnLUJITCnyGymGF1AsY9JT1ykdV8400AsZwm+i+HPda/dJZAl5SUK312Siuk47bhMTQTmnF2kkUp73VwdZ469S544/8ewsoJbMiHhMwZT4LKV2Me9zf4YJmvxtxblo5mIl5r7f2ooXoMWGMDnzItJvbfjEb6sALK05ifE0mdMzeY/x1U+hpku69em+VlJiQxmZ8YtCUIv/nJsirOyDKGNBXKn72WewyHi4p18CrrngxVMnonAHOXMnQch2EDoa9eHoR1yD5yZgTPbQANsE/6b9XOfW/a1tb7X3kem82VEspgOxa1cSol+OBWUwu+pITYNOvFJq4sCYZ4Fxi4rNeBcP+O5ZrQWgfmZoMnFqiFnCo+cMZ2zrHGTpi343yjzG3w5YBDLFT97fqSsLTT7EpPh+nlUYdfYsNgp6k3k0ReZrxM0lCtYwuiaEYpRyS6juEiwJpkjf9ecqcta54olWUVXHNeFeIV1aQvms6fW9g1pi4xljjqbubRfRVuTDZ34uuKLNzaBY9QRBGUCH3vwAgMr5pYpMK3rD5y5YnLm1g4Co6Ny+X/TdkoZg941UzRveyEyTBXfYETx1YkLdOJDhA4yayE012LB/F/cR0yBKT1xpmRyZlRxjW4T4P+BaZ1N7eNNUhaZKYMsC9+FAGnmTEV39cunLcoocO+YhU+BqbTHDYMzt5ZF5sqFrU+BqQjNPEJbxBUZdDbXEekmVGdDRa8Cv7bJm9hxxWbgeLOrYMecKRidc2xtOOUqlvNQFYuZL9dV5K04HMOScc0xWYXeIAg+6j7Cu+cQm1dKcCLBCbkQ7YzwieFaHAJzZsvgTM7kf2hrduVomWVtXKYYIuMyV18yVJaLx4idJkOMgaap/6sbjFbw3rX1dc8YU0aniQHX55gtMxtbMb4S4Bq4gK78z7nPS01ktrFiEhiZio46kckOfYXgzMTCYWMba2tMzDgVjh3TpV1jDnyuYvYxSZFhzLG/RCboPoFOYtZykeDci9g4IzZnXDYXzwLeu61gklgeHHmarCXjgthTt18d/z7kiGmyW1+5U+ADReqcaRwqiL1ZeaxBNrTIOCl5B5Xs+jzOVCZHbJ4wMyUHwp3mzCFxzqQqloQ/HF2/3otMF5VcMASAm27uCmrUnVg1gxe13luBKblLZQeEKZgkiyU0xqqRI4IFvUVKIpPFfiDDHSktoblS8QLHMxEagYhMD0VGOWYi26YyTbVbK1xjWDUz7Mcj6BA+ViWLyHTbgLEDna2fh+xhsmpiJBEuZZlC550+k1rvsciosEfT1sElfb14R2jIqiGL5hf1Iyu0CFjmJ8ml8TtQBOSMIEGR+RxxBHRdHXtSOCA2tFESWTY03b0J4EqZs4gFkTkDiCXZc5EZR3SZXDuqUxIWLVug5fr6+sUSnKKnHSs2SkfORLGAkU4gVmTPRYawjkAWzq5re+7zLMEhC4d2KFu0FJzszBP1XOt6GYkzrs+RzccSFZk8QgLa2nFEKk8dAO8gOAcKFkNw5i3EJjtjXr4wOBPahbxj1PmLEiQpMt9FINRIzTy9L8jCNSzr5+49fM6WTMGok2VAzkwZVsxG5CVtkTFHf449k4XEhZPU9njivmPujI+1j6xsu+lQ5xE5wz3x9FmaMG2R8U6aFgKzf2+9Csq3Q1nbCI3472+tx7JjzkwV73jcwpd7LSITR2i+tfG3qeMjJZ+blr9qIDDmiNBdixwW1hKHcwVz9zafnKG4Hfd43IVIS39ExmCNfXJnjkS51/98Vfyzk7YnjgOtjnJjEDx3JDXnELOzt3wo50jxA+POnLEs3m+Kn4u0f+eY2kHiskdlzdSPbNc1TOmvICDN/Bysju1ymP0pS2HhIDB2OcmiOWAkPnqeMKweIjNnCnYo7tUcdd2GM1S/e4szNMNXov7NyQiGM23Pqp6LrPRXZGxzeGZbJ5osQchdJw4nBKbq/jzhOwXIbSf0uW4yXfX5BxEoJktS19+DapflnEXizKqDjddEZHqKTZ3J6yAwdSTPlL+1WYMyx2ldGCzVceKceZCu8xYfpApqyTL3KDAh8DjAdolyxDATQU48FZE5T9SSJTGB2QzRJG9xXGwMzkzkeGERmaYuSOpkobKthtpAEFduhrQIjIhM59bB0bOUrX19u7YgFkMPLOL9qS32XXNGBKZ/IlN29Mx5XQzmiNBcq+6CrpsYR5j2xXXC1qddWXULrKoXgemZyMS2Fkgsrl06Lsh9g9hATIti00QIByg29xD+WFYNPedKZpF67C5RToSHLRCaEGUC96hglnOLcq4CW2ClGTWFqsctTFg1ITlD9yW+TCQPpuciYxFnY4nN1lNnNT70xOPeMPfY+W6u/AcjjaUlo6YbZybK3zYLZjLgSpYK8HEsGY+Wqbue+bsPQRwiDNK/c/UjS3aMa3Ri5CnwDvvQK2KtclK5poqfzVuA2I/MEbNgxCmOPcdXvIPDpaJFW+zBxTlWURvOnGoPsxL+YPFGYi4ecBHy5lig2HRdzh5mr8v9M/X33coOKRHDylIlQfxVvd1Zjcr6u/q5nka2ewjfJtUBqgxV7zX8fFfkYre/tXbLRcCHJTICgSB9SJ6MQCAQkREIBCIyAoFAICIjEAhEZAQCgYiMQCAQiMgIBAIRGYFAICIjEAgELRF6I/GNar6mSdaJCAQCgUAgcMP/BBgAAsmUEai7+24AAAAASUVORK5CYII="></image>
+      </pattern>
+    </defs>
+    <rect id="LOGO_Y_2020_web_green" width="79" height="22" fill="url(#pattern)"></rect>
+  </svg> <b>CMS</b>',
 
     // Show / hide breadcrumbs on admin panel pages.
     'breadcrumbs' => true,
 
     // Horizontal navbar classes. Helps make the admin panel look similar to your project's design.
-    'header_class' => 'app-header bg-light border-0 navbar',
+    'header_class' => 'app-header bg-dark border-0 navbar',
     // For background colors use: bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan, bg-white
     // For links to be visible on different background colors use: "navbar-dark", "navbar-light", "navbar-color"
 
@@ -104,7 +111,7 @@ return [
     // Try sidebar-hidden, sidebar-fixed, sidebar-compact, sidebar-lg-show
 
     // Sidebar element classes.
-    'sidebar_class' => 'sidebar sidebar-pills bg-light',
+    'sidebar_class' => 'sidebar sidebar-pills bg-dark',
     // Remove "sidebar-transparent" for standard sidebar look
     // Try "sidebar-light" or "sidebar-dark" for dark/light links
     // You can also add a background class like bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan
@@ -114,18 +121,20 @@ return [
     // ------
 
     // Footer element classes.
-    'footer_class' => 'app-footer d-print-none',
+    'footer_class' => 'app-footer d-print-none bg-dark',
     // hide it with d-none
     // change background color with bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan, bg-white
 
     // Developer or company name. Shown in footer.
-    'developer_name' => 'Cristian Tabacitu',
+    'developer_name' => 'Ípsillon',
 
     // Developer website. Link in footer. Type false if you want to hide it.
-    'developer_link' => 'http://tabacitu.ro',
+    'developer_link' => 'https://ipsillon.cc',
 
     // Show powered by Laravel Backpack in the footer? true/false
-    'show_powered_by' => true,
+    'show_powered_by' => false,
+
+    
 
     // -------
     // SCRIPTS
